@@ -32,20 +32,20 @@
 <body>
     <!-- Cabeçalho: Logo, Menus, Botões do Celula -->
     <!-- Div = Container - serve pra guardar algo -->
-     <div id="header"></div>
+    <div id="header"></div>
     <!-- Main: Conteudo Principal -->
     <main>
         <!-- Hero: Titulo - Texto - Botão - Imagem -->
-         <div id="hero"></div>
-<!-- Beneficios (Vantagens): Titulo - Textos - Cards  -->
-         <div id="beneficios"></div>
+        <div id="hero"></div>
+        <!-- Beneficios (Vantagens): Titulo - Textos - Cards  -->
+        <div id="beneficios"></div>
         <!-- Sobre: Explicar a Empresa, Produto ou Serviço -->
         <div id="sobre"></div>
         <!-- Call to Action - CTA ou chamado para ação: Comece agora, curte, 
           compartilhe, inscreva-se, saiba mais, etc -->
-          <div id="cta"></div>
+        <div id="cta"></div>
         <!-- Contato: Formulario, Endereço, Telefone, etc -->
-         <div id="contato"></div>
+        <div id="contato"></div>
     </main>
     <!-- Rodape: Informações, Links, Mapas, Redes Sociais -->
     <footer>
@@ -53,6 +53,10 @@
     </footer>
     <!-- Scripts: Codigos Javascript -->
     <script src="scripts.js"></script>
+    <script>
+        // Passar o pasta/arquivo e o id da div
+        componente("components/header.html", "#header")
+    </script>
 </body>
 
 </html>

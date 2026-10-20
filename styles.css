@@ -61,3 +61,16 @@
     /* Define o espaço entre os links do menu */
     gap: 28px;
 }
+
+.menu a{
+    /* Define a cor padrão dos links */
+    color: #333333;
+    /* Define o tamanho da fonte */
+    font-size: 16px;
+    /* Define uma fonte mais grossa (forte) */
+    font-weight: 600;
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+    /* Faz as mundaças acontecerem de forma suave */
+    transition: 0.3s;
+}

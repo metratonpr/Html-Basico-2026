@@ -74,3 +74,8 @@
     /* Faz as mundaças acontecerem de forma suave */
     transition: 0.3s;
 }
+/* Quando passar o mouse em cima do menu */
+.menu a:hover{
+    /* Alterar a cor */
+    color: #2563eb;
+}

@@ -53,7 +53,7 @@
     text-decoration: none;
 }
 
-.menu{
+.menu {
     /* Ativa o Flexbox */
     display: flex;
     /* Centraliza os itens verticalmente */
@@ -62,7 +62,7 @@
     gap: 28px;
 }
 
-.menu a{
+.menu a {
     /* Define a cor padrão dos links */
     color: #333333;
     /* Define o tamanho da fonte */
@@ -74,8 +74,28 @@
     /* Faz as mundaças acontecerem de forma suave */
     transition: 0.3s;
 }
+
 /* Quando passar o mouse em cima do menu */
-.menu a:hover{
+.menu a:hover {
     /* Alterar a cor */
     color: #2563eb;
+}
+
+/* Hero */
+.hero {
+    /* Margem Interna */
+    padding: 100px;
+    background: #f5f7fb;
+}
+
+.hero-conteudo {
+    /* Flexbox */
+    /* grid, block, inline */
+    display: flex;
+    /* Centralizados, a esquerda, a direita */
+    align-items: center;
+    /* Espaço itens */
+    justify-content: space-between;
+    /* Espaçamento entre os blocos */
+    gap: 60px;
 }

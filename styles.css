@@ -99,3 +99,61 @@
     /* Espaçamento entre os blocos */
     gap: 60px;
 }
+
+/* Ajuste da largura do hero */
+.container{
+    /* Ocupar largura disponivel */
+    width: 90%;
+    /* Limitar Tamanho maximo */
+    max-width: 1200px;
+    /* Centralizar Horizontalmente */
+    margin: 0 auto;
+}
+
+.hero-texto{
+    /* Permitir que o elemento expanda (crescer) */
+    flex: 1;
+}
+
+.hero-destaque{
+    /* Cor */
+    color: #2563eb;
+    /* Fonte em negrito b, ou usar o font-weight */
+    font-weight: bold;
+    /* Define o tamanho */
+    font-size: 16px;
+}
+
+.hero-texto h1{
+    font-size: 72px;
+    /* Espaço entre linhas */
+    line-height: 1.1;
+    /* Margem superior */
+    margin-top: 15px;
+    /* Margem inferior */
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero-texto p{
+    font-size: 36px;
+    color: #555555;
+    margin-bottom: 30px;
+    max-width: 550px;
+}
+
+.botao-hero{    
+    display: inline-block;
+    padding: 14px 28px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    /* Arredondamento dos cantos */
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.botao-hero:hover{
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}

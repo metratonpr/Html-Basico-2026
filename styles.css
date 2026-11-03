@@ -121,7 +121,7 @@
     /* Fonte em negrito b, ou usar o font-weight */
     font-weight: bold;
     /* Define o tamanho */
-    font-size: 16px;
+    font-size: 32px;
 }
 
 .hero-texto h1{
@@ -156,4 +156,14 @@
 .botao-hero:hover{
     background: #1d4ed8;
     transform: translateY(-2px);
+}
+
+/* Imagem */
+.hero-imagem{
+    flex: 1;
+}
+.hero-imagem img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }

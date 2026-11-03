@@ -1,3 +1,19 @@
-h1{
-    padding: 10px;
+/* Variaveis do projeto */
+:root{
+--cor-primaria:#007bff;
+--cor-secundaria: #333333;
+--cor-fundo: #ffffff;
+--tamanho-fonte: 16px;
+--espacamento: 20px;
+--radius-t1: 15px;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+}
+
+.hero-imagem img{
+    width: 100%;
+    height: auto;
+    border-radius:  var(--radius-t1);
 }

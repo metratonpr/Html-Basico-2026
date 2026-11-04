@@ -232,3 +232,31 @@
     font-size: 16px;
     line-height: 1.6;
 }
+
+/* Sobre */
+.sobre{
+    padding: 100px;
+    background: #f5f7fb;
+}
+.sobre-conteudo{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.sobre-imagem{
+    flex: 1
+}
+.sobre-imagem img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.sobre-texto{
+    flex: 1;
+}
+.sobre-destaque{
+    color:#2563eb;
+    font-weight: bold;
+    font-size: 16px;
+}
+

@@ -282,3 +282,7 @@
     font-weight: bold;
     transition: 0.3s;
 }
+.botao-sobre:hover{
+    background: #1d4ed8;
+    transform: translate(-2px);
+}

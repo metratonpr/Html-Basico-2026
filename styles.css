@@ -9,7 +9,7 @@
     /* Espaçamento Interno */
     padding: 0;
     /* Tamanho da caixa */
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -101,7 +101,7 @@
 }
 
 /* Ajuste da largura do hero */
-.container{
+.container {
     /* Ocupar largura disponivel */
     width: 90%;
     /* Limitar Tamanho maximo */
@@ -110,12 +110,12 @@
     margin: 0 auto;
 }
 
-.hero-texto{
+.hero-texto {
     /* Permitir que o elemento expanda (crescer) */
     flex: 1;
 }
 
-.hero-destaque{
+.hero-destaque {
     /* Cor */
     color: #2563eb;
     /* Fonte em negrito b, ou usar o font-weight */
@@ -124,7 +124,7 @@
     font-size: 32px;
 }
 
-.hero-texto h1{
+.hero-texto h1 {
     font-size: 72px;
     /* Espaço entre linhas */
     line-height: 1.1;
@@ -135,14 +135,14 @@
     color: #111827;
 }
 
-.hero-texto p{
+.hero-texto p {
     font-size: 36px;
     color: #555555;
     margin-bottom: 30px;
     max-width: 550px;
 }
 
-.botao-hero{    
+.botao-hero {
     display: inline-block;
     padding: 14px 28px;
     background: #2563eb;
@@ -153,50 +153,55 @@
     font-weight: bold;
     transition: 0.3s;
 }
-.botao-hero:hover{
+
+.botao-hero:hover {
     background: #1d4ed8;
     transform: translateY(-2px);
 }
 
 /* Imagem */
-.hero-imagem{
+.hero-imagem {
     flex: 1;
 }
-.hero-imagem img{
+
+.hero-imagem img {
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
 /* Beneficios */
-.beneficios{
+.beneficios {
     padding: 100px;
     background: #ffffff;
 }
 
-.titulo-secao{
+.titulo-secao {
     text-align: center;
     max-width: 700px;
     margin: 0 auto 50px;
 }
 
-.titulo-destaque{
+.titulo-destaque {
     color: #2563eb;
     /* Negrito */
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 16px;
 }
-.titulo-secao h2{
+
+.titulo-secao h2 {
     font-size: 38px;
     color: #111827;
     margin-top: 10px;
     margin-bottom: 15px;
 }
-.titulo-secao p{
+
+.titulo-secao p {
     font-size: 18px;
     color: #666666;
 }
-.grade-beneficios{
+
+.grade-beneficios {
     /* Ativa o Grid */
     display: grid;
     /* Cria 3 colunas com o mesmo tamanho  */
@@ -204,7 +209,8 @@
     /* espaço */
     gap: 30px;
 }
-.card-beneficio{
+
+.card-beneficios {
     background: #ffffff;
     padding: 35px;
     border: 1px solid #e5e7eb;
@@ -212,67 +218,79 @@
     text-align: center;
     transition: 0.3s;
 }
-.card-beneficio:hover{
+
+.card-beneficios:hover {
     /* Move o elemento para cima */
     transform: translate(-8px);
     /* Cria uma sombra */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
 }
-.card-icone{
+
+.card-icone {
     font-size: 42px;
     margin-bottom: 20px;
 }
-.card-beneficio h3{
+
+.card-beneficios h3 {
     font-size: 22px;
     color: #111827;
     margin-bottom: 12px;
 }
-.card-beneficio p{
+
+.card-beneficios p {
     color: #666666;
     font-size: 16px;
     line-height: 1.6;
 }
 
 /* Sobre */
-.sobre{
+.sobre {
     padding: 100px;
     background: #f5f7fb;
 }
-.sobre-conteudo{
+
+.sobre-conteudo {
     display: flex;
     align-items: center;
     gap: 60px;
 }
-.sobre-imagem{
+
+.sobre-imagem {
     flex: 1
 }
-.sobre-imagem img{
+
+.sobre-imagem img {
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
-.sobre-texto{
+
+.sobre-texto {
     flex: 1;
 }
-.sobre-destaque{
-    color:#2563eb;
+
+.sobre-destaque {
+    color: #2563eb;
     font-weight: bold;
     font-size: 16px;
 }
-.sobre-texto h2{
+
+.sobre-texto h2 {
     font-size: 40px;
     line-height: 1.2;
     color: #111827;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.sobre-texto{
+
+.sobre-texto {
     color: #666666;
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
 }
-.botao-sobre{
+
+.botao-sobre {
     display: inline-block;
     padding: 14px 28px;
     background: #2563eb;
@@ -282,7 +300,28 @@
     font-weight: bold;
     transition: 0.3s;
 }
-.botao-sobre:hover{
+
+.botao-sobre:hover {
     background: #1d4ed8;
     transform: translate(-2px);
+}
+
+.cta{
+    background: #eaf0ff;
+    text-align: center;
+}
+.cta, .contato{
+    padding: 80px;
+}
+.titulo-servicos{
+    /* clamp(minimo, preferido, maximo) - Responsividade - 
+    1vw equivale a 1% de largura */
+    font-size:clamp(28px, 4vw, 40px);
+    margin: 10px 0 20px;
+    line-height: 1.2;}
+
+.cta p{
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #555555;
 }

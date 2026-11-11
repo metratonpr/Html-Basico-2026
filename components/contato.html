@@ -6,7 +6,32 @@
             <p>Preencha os campos abaixo para simular o envio de uma mensagem</p>
         </div>
         <form action="" class="formulario-contato">
+            <p>Todos os campos são obrigatorios</p>
+            <!-- Agrupar campos -->
+            <fieldset>
+                <!-- Legenda -->
+                <legend class="formulario-legenda"> Sua Mensagem</legend>
+                <!-- Inicio do Campo -->
+                <div class="campo-formulario">
+                    <label for="contato-nome">Nome</label>
+                    <input type="text" id="contato-nome" name="nome" autocomplete="name" maxlength="100" required>
+                </div>
+                <!-- Final do campo -->
+                <!-- Inicio do Campo -->
+                <div class="campo-formulario">
+                    <label for="contato-email">E-mail</label>
+                    <input type="email" id="contato-email" name="email" 
+                    autocomplete="name" maxlength="100" required>
+                </div>
+                <!-- Final do campo -->
+                <!-- Inicio do Campo -->
+                <div class="campo-formulario">
+                    <label for="contato-assunto">Assunto</label>
+                    <input type="assunto" id="contato-assunto" 
+                    name="assunto" maxlength="100" required> 
+                </div>
+                <!-- Final do campo -->
+            </fieldset>
         </form>
     </div>
-
 </section>

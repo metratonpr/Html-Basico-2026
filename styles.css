@@ -335,13 +335,15 @@
     padding: 100px 0;
     background: #ffffff;
 }
+
 .titulo-contato {
     /* top, right, bottom, left */
     /* margin: 2px 15px 2px 15px; */
     /* margin: 2px 15px */
     margin-bottom: 15px;
 }
-.formulario-contato{
+
+.formulario-contato {
     max-width: 75%;
     margin: 0 auto;
     padding: 35px;
@@ -349,38 +351,46 @@
     border: 1px solid #e5e7eb;
     border-radius: 15px;
 }
-.formulario-contato p{
+
+.formulario-contato p {
     margin-bottom: 20px;
     color: #666666;
     font-size: 14px;
 }
-.formulario-legenda{
+
+.formulario-legenda {
     padding: 0 10px;
     color: #2563eb;
     font-size: 18px;
     font-weight: bold;
 }
-.formulario-contato fieldset{
+
+.formulario-contato fieldset {
     padding: 25px;
     border: 1px solid #d1d5db;
     border-radius: 10px;
 }
-.campo-formulario{
+
+.campo-formulario {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.campo-mensagem{
+
+.campo-mensagem {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
 }
-.campo-formulario label, .campo-mensagem label{
+
+.campo-formulario label,
+.campo-mensagem label {
     margin-bottom: 8px;
     color: #222;
     font-weight: bold;
 }
-.campo-formulario input{
+
+.campo-formulario input {
     width: 100%;
     padding: 14px;
     border: 1px solid #cccccc;
@@ -390,3 +400,21 @@
     font-size: 16px;
     transition: 0.3s;
 }
+.campo-mensagem textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    color: #222222;
+    font-size: 16px;
+    /* Usar qualquer fonte disponivel */
+    font-family: inherit;
+    resize: vertical;
+    transition: 0.3s;
+}
+.campo-formulario input:focus, .campo-mensagem:textarea:focus{
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+/* footer */

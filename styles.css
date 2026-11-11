@@ -306,22 +306,87 @@
     transform: translate(-2px);
 }
 
-.cta{
+.cta {
     background: #eaf0ff;
     text-align: center;
 }
-.cta, .contato{
+
+.cta,
+.contato {
     padding: 80px;
 }
-.titulo-servicos{
+
+.titulo-servicos {
     /* clamp(minimo, preferido, maximo) - Responsividade - 
     1vw equivale a 1% de largura */
-    font-size:clamp(28px, 4vw, 40px);
+    font-size: clamp(28px, 4vw, 40px);
     margin: 10px 0 20px;
-    line-height: 1.2;}
+    line-height: 1.2;
+}
 
-.cta p{
+.cta p {
     max-width: 650px;
     margin: 0 auto 28px;
     color: #555555;
+}
+
+/* Contato */
+.contato {
+    padding: 100px 0;
+    background: #ffffff;
+}
+.titulo-contato {
+    /* top, right, bottom, left */
+    /* margin: 2px 15px 2px 15px; */
+    /* margin: 2px 15px */
+    margin-bottom: 15px;
+}
+.formulario-contato{
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 35px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+}
+.formulario-contato p{
+    margin-bottom: 20px;
+    color: #666666;
+    font-size: 14px;
+}
+.formulario-legenda{
+    padding: 0 10px;
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+.formulario-contato fieldset{
+    padding: 25px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+}
+.campo-formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.campo-mensagem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.campo-formulario label, .campo-mensagem label{
+    margin-bottom: 8px;
+    color: #222;
+    font-weight: bold;
+}
+.campo-formulario input{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #222222;
+    font-size: 16px;
+    transition: 0.3s;
 }
